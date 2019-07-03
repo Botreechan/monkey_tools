@@ -1,0 +1,5 @@
+int logctl_get(): open '/dev/hwlog_switch' fail -1, 13. Permission denied
+
+Note: log switch off, only log_main and log_events will have logs!
+--------- beginning of main
+I/AndroidRuntime( 8551): readDownloadBoosterConfig: 'true'

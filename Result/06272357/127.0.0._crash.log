@@ -1,0 +1,28 @@
+--------- beginning of system
+--------- beginning of main
+06-27 23:58:01.009  1538  1538 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+06-27 23:58:01.011  1538  1538 D AndroidRuntime: CheckJNI is OFF
+06-27 23:58:01.050  1538  1538 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+06-27 23:58:52.184  1538  1538 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.view.Display.getWidth()' on a null object reference
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.MonkeySourceRandom.randomPoint(MonkeySourceRandom.java:330)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.MonkeySourceRandom.generatePointerEvent(MonkeySourceRandom.java:270)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.MonkeySourceRandom.generateEvents(MonkeySourceRandom.java:408)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.MonkeySourceRandom.getNextEvent(MonkeySourceRandom.java:492)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.Monkey.runMonkeyCycles(Monkey.java:1126)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.Monkey.run(Monkey.java:622)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.commands.monkey.Monkey.main(Monkey.java:485)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+06-27 23:58:52.184  1538  1538 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: Error reporting crash
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at android.os.BinderProxy.transact(Binder.java:503)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at android.app.ActivityManagerProxy.handleApplicationCrash(ActivityManagerNative.java:4427)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:90)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+06-27 23:58:52.216  1538  1538 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+06-27 23:58:52.347  1587  1587 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+06-27 23:58:52.354  1587  1587 D AndroidRuntime: CheckJNI is OFF
